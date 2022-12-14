@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Gallery</title>
+	<link rel="stylesheet" href="gallery.css">
+	<link rel="icon" href="eldegoss.png">
+	<script type="text/javascript" src="gallery.js">
+	</script>
+</head>
+
+<body>
+<div>
+	<a class="ribbon" href="about.html">About</a>
+	<a class="ribbon" href="contact.html">Contact</a>
+	<a class="ribbon" href="gallery.html">Gallery</a>
+	<a class="ribbon" href="home.html">Home</a>
+	<table>
+		<tr>
+			<td style="width:30px"></td>
+			<td class="name1">Carlos</td>
+			<td class="name2"><b>Lazaro</b></td>
+		</tr>
+	</table>
+</div>
+
+<div class="picFull" id="picFullBg">
+	<img src="pic1.jpg" id="picFullImg">
+	<span onclick="closePicFull()">x</span>
+</div>
+<div class="picGallery">
+	<img src="pic1.jpg" class="pic1" onclick="openPicFull(this.src)"></img>
+	<img src="pic2.jpg" class="pic2" onclick="openPicFull(this.src)"></img>
+	<img src="pic3.jpg" class="pic3" onclick="openPicFull(this.src)"></img>
+	<img src="pic4.jpg" class="pic4" onclick="openPicFull(this.src)"></img>
+	<img src="pic5.jpg" class="pic5" onclick="openPicFull(this.src)"></img>
+	<img src="pic6.jpg" class="pic6" onclick="openPicFull(this.src)"></img>
+	<img src="pic7.jpg" class="pic7" onclick="openPicFull(this.src)"></img>
+	<img src="pic8.jpg" class="pic8" onclick="openPicFull(this.src)"></img>
+	<img src="pic9.jpg" class="pic9" onclick="openPicFull(this.src)"></img>
+</div>
+<script type="text/javascript" src="gallery.js"></script>
+</body>
+</html>

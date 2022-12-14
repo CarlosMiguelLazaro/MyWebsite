@@ -1,0 +1,112 @@
+body{
+	margin:0;
+	background-color: rgb(237, 255, 242);
+	height: 100%;
+	width: 100%;
+	background-image:url(eldegoss.png), url(lilligant.png);
+	background-repeat: no-repeat, no-repeat;
+	background-position: top -30px right -200px, top -30px left -200px;'
+}
+table {
+	background-color: rgb(1, 61, 17);
+	color: black;
+	border: none;
+	height: 96px;
+	width: 52%;
+	float:right;
+	top:0px;
+}
+.name1 {
+	font-size: 30pt;
+	font-family: gothambook;
+	width:20px;
+	color: rgb(240, 255, 240);
+}
+.name2 {
+	font-size: 30pt;
+	font-family: gothammedium;
+	color: rgb(64, 255, 117);
+}
+.ribbon{
+	background-color: rgb(1, 61, 17);
+	border: none;
+	height: 96px;
+	width: 12%;
+	color: rgb(240, 255, 240);
+	font-size: 20pt;
+	font-family: gothammedium;
+	text-align:center;
+	line-height: 96px;
+	text-decoration: none; 
+	cursor: pointer;
+	float: right;	
+	transition: height 0.25s, color 0.25s;
+}
+.ribbon:hover { 
+	height: 90px;
+	color: rgb(189, 255, 204);
+	transition: height 0.25s, color 0.25s;
+	text-decoration: none; 	
+}
+@font-face {
+    font-family: 'gothammedium';
+    src: url('gotham-medium-webfont.woff2') format('woff2'),
+         url('gotham-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothambook';
+    src: url('gotham-book-webfont.woff2') format('woff2'),
+         url('gotham-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.aboutHeader{
+	display: block;
+	transform: translate(-50%, 120px);
+	left:50%;
+	position:absolute;
+	color:rgb(0, 26, 7);
+	font-family:gothammedium;
+	font-size:35pt;
+	animation-name:moveDown;
+	animation-duration:0.5s;
+	animation-fill-mode:forward;
+}
+@keyframes moveDown{
+	from { top:-200px; opacity:0 }
+	to { top:0px; opacity:1 }
+}
+.aboutText{
+	display: block;
+	transform: translate(-50%, 240px);
+	left:50%;
+	position:absolute;
+	width:550px;
+	text-align:center;
+	color:rgb(0, 26, 7);
+	font-family:gothammedium;
+	font-size:16pt;
+	background-color:rgba(237, 255, 242, 0.5);
+	animation-name:fade;
+	animation-duration:0.5s;
+	animation-fill-mode:both;
+	animation-delay:0.5s;
+}
+.eldegoss2{
+	display: block;
+	transform: translate(-50%, 420px);
+	left:50%;
+	position:absolute;
+	width:231px;
+	height:194px;
+	animation-name:fade;
+	animation-duration:0.5s;
+	animation-fill-mode:both;
+	animation-delay:0.5s;
+}
+@keyframes fade{
+	from {opacity:0}
+	to {opacity:1}
+}

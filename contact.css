@@ -1,0 +1,176 @@
+body{
+	margin:0;
+	background-color: rgb(237, 255, 242);
+	height: 100%;
+	width: 100%;
+	background-image:url(eldegoss.png);
+	background-repeat: no-repeat;
+	background-position: top -30px right -200px;'
+}
+table {
+	background-color: rgb(1, 61, 17);
+	color: black;
+	border: none;
+	height: 96px;
+	width: 52%;
+	float:right;
+	top:0px;
+}
+.name1 {
+	font-size: 30pt;
+	font-family: gothambook;
+	width:20px;
+	color: rgb(240, 255, 240);
+}
+.name2 {
+	font-size: 30pt;
+	font-family: gothammedium;
+	color: rgb(64, 255, 117);
+}
+.ribbon{
+	background-color: rgb(1, 61, 17);
+	border: none;
+	height: 96px;
+	width: 12%;
+	color: rgb(240, 255, 240);
+	font-size: 20pt;
+	font-family: gothammedium;
+	text-align:center;
+	line-height: 96px;
+	text-decoration: none; 
+	cursor: pointer;
+	float: right;	
+	transition: height 0.25s, color 0.25s;
+}
+.ribbon:hover { 
+	height: 90px;
+	color: rgb(189, 255, 204);
+	transition: height 0.25s, color 0.25s;
+	text-decoration: none; 	
+}
+@font-face {
+    font-family: 'gothammedium';
+    src: url('gotham-medium-webfont.woff2') format('woff2'),
+         url('gotham-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'gothambook';
+    src: url('gotham-book-webfont.woff2') format('woff2'),
+         url('gotham-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.fbButton{
+	background-color: rgb(1, 61, 17);
+	border: none;
+	height: 195px;
+	line-height: 64px;
+	width: 600px;
+	border-radius:28px;
+	margin:0 auto;
+	color: rgb(240, 255, 240);
+	font-size: 20pt;
+	font-family: gothammedium;
+	text-align:center;
+	text-decoration: none; 
+	top:135px;
+	left:40px;
+	cursor: pointer;
+	position:absolute;
+	transform: scale(1);
+	transition: transform 0.25s;
+	animation-name:moveRight;
+	animation-duration:0.75s;
+	animation-fill-mode: forwards;
+}
+.fbLogo{
+	height:70px;
+	width:70px;
+	top: 100px;
+	left:300px;
+	transform: translate(-50%, -55%);
+	position:absolute;
+}
+.fbButton:hover{
+	transform: scale(0.95);
+	transition: transform 0.25s;
+}
+.info{
+	background-color: rgb(1, 61, 17);
+	border: none;
+	height: 275px;
+	line-height: 56px;
+	width: 600px;
+	border-radius:28px;
+	color: rgb(240, 255, 240);
+	font-size: 20pt;
+	font-family: gothammedium;
+	text-align:left;
+	text-decoration: none; 
+	top:370px;
+	left:40px;
+	position:absolute;
+	animation-name:moveRight;
+	animation-duration:0.75s;
+	animation-fill-mode: forwards;
+}
+.infoText1{
+	margin-top:15px;
+	margin-left:90px;
+	width:500px;
+	font-size:18pt;
+}
+.infoText2{
+	line-height:0px;
+	margin-left:90px;
+	width:500px;
+}
+.infoText3{
+	margin-top:45px;
+	line-height:35px;
+	margin-left:90px;
+	width:500px;
+}
+.mail{
+	height:35px;
+	width:35px;
+	top: 25px;
+	left:35px;
+	position:absolute;
+}
+.phone{
+	height:35px;
+	width:35px;
+	top: 83px;
+	left:35px;
+	position:absolute;
+}
+.address{
+	height:35px;
+	width:35px;
+	top:143px;
+	left:35px;
+	position:absolute;
+}
+@keyframes moveRight{
+	from {left:-50%; opacity:0}
+	to {left:40px; opacity:1}
+}
+.map{
+	border:0; 
+	float:right;  
+	margin-top:136px; 
+	border-radius:28px;
+	animation-name:moveLeft;
+	animation-duration:0.75s;
+	animation-fill-mode: forwards;
+	position:absolute;
+}
+@keyframes moveLeft{
+	from {right:-50%; opacity:0}
+	to {right:40px; opacity:1}
+}
